@@ -263,7 +263,7 @@ export default function About() {
                             </Link>
                             <Link
                               to="/products"
-                              className="block text-pink-500 font-semibold py-2"
+                              className="block text:gray-300 hover:text-pink-500 font-semibold py-2"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Products
@@ -271,7 +271,7 @@ export default function About() {
                            
                             <Link
                               to="/about"
-                              className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
+                              className="block text-pink-500 transition-colors duration-300 py-2"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               About

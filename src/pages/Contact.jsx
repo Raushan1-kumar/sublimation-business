@@ -289,7 +289,7 @@ export default function Contact() {
                             </Link>
                             <Link
                               to="/products"
-                              className="block text-pink-500 font-semibold py-2"
+                              className="block text-gray-700 hover:text-pink-500 font-semibold py-2"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Products
@@ -304,7 +304,7 @@ export default function Contact() {
                             </Link>
                             <Link
                               to="/contact"
-                              className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
+                              className="block text-pink-500 transition-colors duration-300 py-2"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Contact

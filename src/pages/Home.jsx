@@ -127,14 +127,14 @@ export default function Home() {
             <div className="px-4 py-4 space-y-4">
                            <Link
                              to="/"
-                             className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
+                             className="block  text-pink-500 transition-colors duration-300 py-2"
                              onClick={() => setMobileMenuOpen(false)}
                            >
                              Home
                            </Link>
                            <Link
                              to="/products"
-                             className="block text-pink-500 font-semibold py-2"
+                             className="block text-gray-700 hover:text-pink-500 font-semibold py-2"
                              onClick={() => setMobileMenuOpen(false)}
                            >
                              Products
