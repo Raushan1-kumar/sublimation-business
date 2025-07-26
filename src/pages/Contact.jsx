@@ -279,49 +279,43 @@ export default function Contact() {
           {/* Mobile Navigation Menu */}
           {mobileMenuOpen && (
             <div className="md:hidden border-t border-gray-200 bg-white/95 backdrop-blur-sm">
-              <div className="px-4 py-4 space-y-4">
-                <a
-                  href="/sublimatehub"
-                  className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Home
-                </a>
-                <a
-                  href="/products"
-                  className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Products
-                </a>
-                <a
-                  href="#gallery"
-                  className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Gallery
-                </a>
-                <a
-                  href="/about"
-                  className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  About
-                </a>
-                <a
-                  href="/contact"
-                  className="block text-pink-500 font-semibold py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Contact
-                </a>
-                <button
-                  className="w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white px-6 py-3 rounded-full hover:scale-105 transition-transform duration-300 mt-4 shadow-lg"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Get Quote
-                </button>
-              </div>
+             <div className="px-4 py-4 space-y-4">
+                            <Link
+                              to="/"
+                              className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              Home
+                            </Link>
+                            <Link
+                              to="/products"
+                              className="block text-pink-500 font-semibold py-2"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              Products
+                            </Link>
+                           
+                            <Link
+                              to="/about"
+                              className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              About
+                            </Link>
+                            <Link
+                              to="/contact"
+                              className="block text-gray-700 hover:text-pink-500 transition-colors duration-300 py-2"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              Contact
+                            </Link>
+                            <button
+                              className="w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white px-6 py-3 rounded-full hover:scale-105 transition-transform duration-300 mt-4 shadow-lg"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              Get Quote
+                            </button>
+                          </div>
             </div>
           )}
         </div>
